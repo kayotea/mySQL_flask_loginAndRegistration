@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Login And Registration: Registration Page</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <p>{{ session['error_message'] }}</p>
+            <form action="/register/process" method="post">
+                <label for="first">First Name:</label>
+                <input type="text" name="first"><br>
+                <label for="last">Last Name:</label>
+                <input type="text" name="last"><br>
+                <label for="email">Email:</label>
+                <input type="text" name="email"><br>
+                <label for="pw">Password:</label>
+                <input type="text" name="pw"><br>
+                <label for="cpw">Confirm Password:</label>
+                <input type="text" name="cpw"><br>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </body>
+</html>

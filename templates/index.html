@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Login And REgistration</title>
+    </head>
+    <body>
+        {{ session['login_message'] }}
+        <div id="wrapper">
+            <h3>Login:</h3>
+            <form action="/login" method="post">
+                <label for="email">Email:</label>
+                <input type="text" name="email">
+                <label for="password">Password:</label>
+                <input type="text" name="password">
+                <input type="submit" value="Login">
+            </form>
+            <h3>Click below to register:</h3>
+            <p><a href="/register">Register</a></p>
+        </div>
+    </body>
+</html>
